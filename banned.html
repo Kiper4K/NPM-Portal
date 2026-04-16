@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banned | North Penn-Mansfield Class of 2026</title>
+  <link rel="icon" href="https://cdn.creazilla.com/cliparts/20088/tiger-head-clipart-original.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <main class="section" id="banned-page">
+      <article class="portal-card signup-success-card banned-page-card">
+        <p class="eyebrow">Access Restricted</p>
+        <h3><span id="banned-user-name">This account</span> is banned</h3>
+        <p><strong>Ban type:</strong> <span id="banned-type">Account Ban</span></p>
+        <p><strong>Reason:</strong> <span id="banned-reason">A moderator restricted this account.</span></p>
+        <div class="ban-countdown" id="banned-timer">Loading...</div>
+        <p>You can return after the timer reaches zero, or send an appeal below.</p>
+        <form id="ban-appeal-form" class="admin-form">
+          <label>Appeal message<textarea name="appeal_message" rows="5" placeholder="Explain why you believe this ban should be removed." required></textarea></label>
+          <button type="submit" class="button button-primary">Send appeal</button>
+        </form>
+        <p class="admin-status" id="ban-appeal-status" aria-live="polite"></p>
+      </article>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="supabase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

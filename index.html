@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Penn-Mansfield Class of 2026 Portal</title>
+  <link rel="icon" href="https://cdn.creazilla.com/cliparts/20088/tiger-head-clipart-original.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v25.0&appId=APP_ID"></script>
+  <div class="page-shell">
+    <div class="top-banner">
+      <div class="banner-track" id="banner-track">Class of 2026 updates will appear here.</div>
+    </div>
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="index.html">
+          <img class="brand-image" src="https://cdn.creazilla.com/cliparts/20088/tiger-head-clipart-original.png" alt="Tiger logo">
+          <div>
+            <p>North Penn-Mansfield</p>
+            <h1>Class of 2026</h1>
+          </div>
+        </a>
+        <div class="topbar-right">
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="accounts.html">Accounts</a>
+            <a href="events.html">Events</a>
+            <a href="forum.html">Forum</a>
+            <details class="nav-more">
+              <summary>More</summary>
+              <div class="nav-more-menu">
+                <a href="directory.html">Directory</a>
+                <a href="plans.html">After Grad</a>
+                <a href="fundraisers.html">Fundraisers</a>
+                <a href="officers.html">Class Officers</a>
+                <a href="admin.html" class="admin-link hidden">Admin</a>
+              </div>
+            </details>
+          </div>
+          <a class="topbar-profile hidden" id="topbar-profile-link" href="accounts.html">
+            <img class="profile-avatar small" id="topbar-profile-avatar" src="https://cdn.creazilla.com/cliparts/20088/tiger-head-clipart-original.png" alt="Profile picture">
+            <div class="topbar-profile-text">
+              <span class="topbar-profile-label">My Account</span>
+              <span class="topbar-profile-name" id="topbar-profile-name">Open account</span>
+            </div>
+          </a>
+        </div>
+      </nav>
+
+      <section class="hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Tiger Network</p>
+          <h2>The senior hub for updates, connections, plans, and memories.</h2>
+          <p class="hero-text">
+            Follow class announcements, jump into the student directory, share your post-graduation plans,
+            and head into the forum without one giant scrolling page.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="accounts.html" id="hero-create-account">Create an Account</a>
+            <a class="button button-secondary" href="forum.html">Join the Forum</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <p class="card-label">Countdown To Graduation</p>
+          <div class="countdown">
+            <div>
+              <span id="grad-days">000</span>
+              <small>Days</small>
+            </div>
+            <div>
+              <span id="grad-hours">00</span>
+              <small>Hours</small>
+            </div>
+            <div>
+              <span id="grad-minutes">00</span>
+              <small>Minutes</small>
+            </div>
+            <div>
+              <span id="grad-seconds">00</span>
+              <small>Seconds</small>
+            </div>
+          </div>
+          <p class="card-note">Counting down to June 6, 2026.</p>
+          <p class="card-label">Live Portal Snapshot</p>
+          <div class="countdown portal-stats">
+            <div>
+              <span id="stat-students">000</span>
+              <small>Students</small>
+            </div>
+            <div>
+              <span id="stat-posts">00</span>
+              <small>Posts</small>
+            </div>
+            <div>
+              <span id="stat-plans">00</span>
+              <small>Plans</small>
+            </div>
+          </div>
+          <p class="card-note">A live snapshot of portal activity for the Class of 2026.</p>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="section" id="announcements">
+        <div class="section-heading">
+          <p class="eyebrow">Latest News</p>
+          <h3>Announcements</h3>
+          <p>Important reminders, event updates, and senior-year information from the class team.</p>
+        </div>
+        <div class="announcement-grid" id="announcement-list"></div>
+      </section>
+
+      <section class="section portal-section">
+        <div class="section-heading">
+          <p class="eyebrow">Quick Links</p>
+          <h3>Explore the Portal</h3>
+          <p>Pick the part of the class portal you want without scrolling through everything on one page.</p>
+        </div>
+        <div class="portal-grid two-up">`r`n          <article class="portal-card">`r`n            <h4>Accounts</h4>
+            <p>Create your account, sign in, and add your profile picture.</p>
+            <a class="button button-secondary" href="accounts.html">Open Accounts</a>
+          </article>
+          <article class="portal-card">
+            <h4>Directory</h4>
+            <p>See classmates in the LinkedIn-style directory with profiles and future plans.</p>
+            <a class="button button-secondary" href="directory.html">Open Directory</a>
+          </article>
+          <article class="portal-card">
+            <h4>After Graduation</h4>
+            <p>Post what comes next and browse the class plan feed.</p>
+            <a class="button button-secondary" href="plans.html">Open Plans</a>
+          </article>
+          <article class="portal-card">
+            <h4>Tiger Talk Forum</h4>
+            <p>Start threads, reply like Reddit, and keep class conversations going.</p>
+            <a class="button button-secondary" href="forum.html">Open Forum</a>
+          </article>
+          <article class="portal-card">
+            <h4>Events Calendar</h4>
+            <p>See upcoming senior events and register online.</p>
+            <a class="button button-secondary" href="events.html">Open Events</a>
+          </article>
+          <article class="portal-card">
+            <h4>Fundraisers</h4>
+            <p>Track class fundraiser goals and see how close we are.</p>
+            <a class="button button-secondary" href="fundraisers.html">Open Fundraisers</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section album-section">
+        <div class="section-heading">
+          <p class="eyebrow">Memories</p>
+          <h3>Photo Preview</h3>
+          <p>A quick look at the public album. Any signed-in student can add photos, and admins can remove them.</p>
+        </div>
+        <article class="portal-card album-submit-card">
+          <h4>Share a Photo</h4>
+          <p class="required-note">Sign in first to add a photo to the public album. You can upload from your phone or computer, or paste an image URL if you want.</p>
+          <form id="public-album-form" class="admin-form">
+            <label>Photo title<input type="text" name="title" placeholder="Prom 2026" required></label>
+            <label>Description<input type="text" name="description" placeholder="Students arriving for prom night" required></label>
+            <label>Upload photo<input type="file" name="imageFile" accept="image/*"></label>
+            <label>Or use an image URL<input type="url" name="imageUrl" placeholder="https://example.com/photo.jpg"></label>
+            <button type="submit" class="button button-primary admin-submit">Add photo</button>
+          </form>
+          <p class="admin-status" id="album-status" aria-live="polite"></p>
+        </article>
+        <div class="album-grid" id="album-list"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Connected</p>
+          <h3>Class Facebook</h3>
+          <p>Follow the class Facebook page for class reminders, photos, fundraiser updates, and event news.</p>
+        </div>
+        <div class="portal-grid two-up facebook-layout">
+          <article class="portal-card facebook-summary-card">
+            <h4>North Penn-Mansfield Class of 2026</h4>
+            <p>Quick updates, reminders, fundraiser progress, and class highlights all in one place.</p>
+            <div class="facebook-chip-row">
+              <span>Announcements</span>
+              <span>Events</span>
+              <span>Photos</span>
+            </div>
+            <a class="button button-secondary facebook-open-button" href="https://www.facebook.com/profile.php?id=61573898025906#" target="_blank" rel="noreferrer">Open Facebook</a>
+          </article>
+          <article class="portal-card facebook-spotlight">
+            <h4>Facebook Feed</h4>
+            <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61573898025906#" data-tabs="timeline, events" data-width="1500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/profile.php?id=61573898025906#" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=61573898025906#">North Penn-Mansfield Class of 2026</a></blockquote></div>
+            
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>North Penn-Mansfield Tigers | Class of 2026 Portal</p>
+      <p>Announcements, accounts, plans, community, and graduation memories in one place.</p>
+      <p>Created and developed by Class President Landyn Empet.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="supabase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

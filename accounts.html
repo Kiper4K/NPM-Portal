@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accounts | North Penn-Mansfield Class of 2026</title>
+  <link rel="icon" href="https://cdn.creazilla.com/cliparts/20088/tiger-head-clipart-original.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="top-banner">
+      <div class="banner-track" id="banner-track">Class of 2026 updates will appear here.</div>
+    </div>
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="index.html">
+          <img class="brand-image" src="https://cdn.creazilla.com/cliparts/20088/tiger-head-clipart-original.png" alt="Tiger logo">
+          <div><p>North Penn-Mansfield</p><h1>Class of 2026</h1></div>
+        </a>
+        <div class="topbar-right">
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="accounts.html">Accounts</a>
+            <a href="events.html">Events</a>
+            <a href="forum.html">Forum</a>
+            <details class="nav-more">
+              <summary>More</summary>
+              <div class="nav-more-menu">
+                <a href="directory.html">Directory</a>
+                <a href="plans.html">After Grad</a>
+                <a href="fundraisers.html">Fundraisers</a>
+                <a href="officers.html">Class Officers</a>
+                <a href="admin.html" class="admin-link hidden">Admin</a>
+              </div>
+            </details>
+          </div>
+          <a class="topbar-profile hidden" id="topbar-profile-link" href="accounts.html">
+            <img class="profile-avatar small" id="topbar-profile-avatar" src="https://cdn.creazilla.com/cliparts/20088/tiger-head-clipart-original.png" alt="Profile picture">
+            <div class="topbar-profile-text">
+              <span class="topbar-profile-label">My Account</span>
+              <span class="topbar-profile-name" id="topbar-profile-name">Open account</span>
+            </div>
+          </a>
+        </div>
+      </nav>
+      <section class="hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Profiles</p>
+          <h2>Create your account and get into the portal.</h2>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="section portal-section" id="accounts">
+        <div class="section-heading">
+          <p class="eyebrow">Profiles</p>
+          <h3>Accounts</h3>
+          <p>Create a student account for the portal, sign back in, and show where you are headed after graduation.</p>
+        </div>
+        <div class="account-status-card" id="account-status-card">
+          <div>
+            <p class="status-label">Current Account</p>
+            <h4 id="current-user-name">No one is signed in</h4>
+            <p id="current-user-summary">Create an account or sign in to post in the forum and add your plans.</p>
+          </div>
+          <button type="button" class="button button-secondary toolbar-button hidden" id="sign-out-button">Sign Out</button>
+        </div>
+        <div class="portal-grid two-up" id="auth-panels">
+          <article class="portal-card">
+            <h4>Create Account</h4>
+            <p class="required-note">Fields marked with * are required.</p>
+            <p class="required-note">After you sign up, we will send a confirmation email. You must click that email link before your account is fully activated.</p>
+            <form id="account-form" class="admin-form">
+              <label>Full name *<input type="text" name="name" placeholder="Jordan Smith" required></label>
+              <label>Email *<input type="email" name="email" placeholder="name@example.com" required></label>
+              <label>Username *<input type="text" name="username" placeholder="jordans26" required></label>
+              <label>Password *<input type="password" name="password" placeholder="Create a password" required></label>
+              <label>Upload profile photo<input type="file" name="avatarFile" accept="image/*"></label>
+              <label>Or use a profile picture URL<input type="url" name="avatar" placeholder="Optional image URL"></label>
+              <label>Headline<input type="text" name="headline" placeholder="Future nurse | Tiger for life"></label>
+              <label>Future plans<input type="text" name="future" placeholder="College, career, military, gap year..."></label>
+              <label>Bio<textarea name="bio" rows="4" placeholder="Share clubs, sports, goals, or shoutouts."></textarea></label>
+              <button type="submit" class="button button-primary admin-submit">Create account</button>
+            </form>
+          </article>
+          <article class="portal-card">
+            <h4>Sign In</h4>
+            <p class="required-note">Fields marked with * are required.</p>
+            <button type="button" class="button button-secondary google-signin-button" id="google-signin-button">Continue with Google</button>
+            <p class="required-note">You can sign in with your Google account if it uses an email address approved for the portal.</p>
+            <form id="login-form" class="admin-form">
+              <label>Email *<input type="email" name="email" placeholder="name@example.com" required></label>
+              <label>Password *<input type="password" name="password" placeholder="Enter your password" required></label>
+              <button type="submit" class="button button-primary admin-submit">Sign in</button>
+            </form>
+            <p class="admin-status" id="account-status" aria-live="polite"></p>
+          </article>
+        </div>
+        <div class="portal-grid hidden" id="profile-tools">
+          <p class="admin-status" id="profile-tool-status" aria-live="polite"></p>
+          <article class="portal-card">
+            <h4>Update Profile Photo</h4>
+            <p class="required-note">Sign in first, then upload a photo from your phone or computer. If you skip it, the Tiger icon will be used.</p>
+            <form id="avatar-upload-form" class="admin-form">
+              <label>Choose profile photo<input type="file" name="avatarFile" accept="image/*"></label>
+              <button type="submit" class="button button-secondary">Upload profile photo</button>
+            </form>
+          </article>
+          <article class="portal-card">
+            <h4>Edit Profile</h4>
+            <p class="required-note">Update your headline, bio, future plans, or username anytime.</p>
+            <form id="profile-edit-form" class="admin-form profile-edit-grid">
+              <div class="mini-grid">
+                <label>Full name *<input type="text" name="full_name" required></label>
+                <label>Username *<input type="text" name="username" required></label>
+              </div>
+              <label>Headline<input type="text" name="headline"></label>
+              <label>Future plans<input type="text" name="future_plan"></label>
+              <label>Bio<textarea name="bio" rows="4"></textarea></label>
+              <button type="submit" class="button button-primary admin-submit">Save profile</button>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+    <div class="signup-success-overlay hidden" id="signup-success-overlay">
+      <div class="signup-success-card">
+        <p class="eyebrow">Almost There</p>
+        <h3>Check your email</h3>
+        <p id="signup-success-message">We sent you a confirmation link.</p>
+        <button type="button" class="button button-primary" id="signup-success-close">Okay</button>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>North Penn-Mansfield Tigers | Class of 2026 Portal</p>
+      <p>Accounts and profile setup.</p>
+      <p>Created and developed by Class President Landyn Empet.</p>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="supabase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

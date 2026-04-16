@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundraisers | North Penn-Mansfield Class of 2026</title>
+  <link rel="icon" href="https://cdn.creazilla.com/cliparts/20088/tiger-head-clipart-original.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="top-banner">
+      <div class="banner-track" id="banner-track">Class of 2026 updates will appear here.</div>
+    </div>
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="index.html">
+          <img class="brand-image" src="https://cdn.creazilla.com/cliparts/20088/tiger-head-clipart-original.png" alt="Tiger logo">
+          <div><p>North Penn-Mansfield</p><h1>Class of 2026</h1></div>
+        </a>
+        <div class="topbar-right">
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="accounts.html">Accounts</a>
+            <a href="events.html">Events</a>
+            <a href="forum.html">Forum</a>
+            <details class="nav-more">
+              <summary>More</summary>
+              <div class="nav-more-menu">
+                <a href="directory.html">Directory</a>
+                <a href="plans.html">After Grad</a>
+                <a href="fundraisers.html">Fundraisers</a>
+                <a href="officers.html">Class Officers</a>
+                <a href="admin.html" class="admin-link hidden">Admin</a>
+              </div>
+            </details>
+          </div>
+          <a class="topbar-profile hidden" id="topbar-profile-link" href="accounts.html">
+            <img class="profile-avatar small" id="topbar-profile-avatar" src="https://cdn.creazilla.com/cliparts/20088/tiger-head-clipart-original.png" alt="Profile picture">
+            <div class="topbar-profile-text">
+              <span class="topbar-profile-label">My Account</span>
+              <span class="topbar-profile-name" id="topbar-profile-name">Open account</span>
+            </div>
+          </a>
+        </div>
+      </nav>
+      <section class="hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Support</p>
+          <h2>Track class fundraising goals in one place.</h2>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="section portal-section">
+        <div class="section-heading">
+          <p class="eyebrow">Support</p>
+          <h3>Fundraisers</h3>
+          <p>See what the class is raising money for and how close each fundraiser is to its goal.</p>
+        </div>
+        <p class="admin-status" id="fundraiser-status" aria-live="polite"></p>
+        <div class="portal-grid" id="fundraiser-list"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>North Penn-Mansfield Tigers | Class of 2026 Portal</p>
+      <p>Fundraising goals and progress.</p>
+      <p>Created and developed by Class President Landyn Empet.</p>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="supabase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin | North Penn-Mansfield Class of 2026</title>
+  <link rel="icon" href="https://cdn.creazilla.com/cliparts/20088/tiger-head-clipart-original.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="top-banner">
+      <div class="banner-track" id="banner-track">Class of 2026 updates will appear here.</div>
+    </div>
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="index.html">
+          <img class="brand-image" src="https://cdn.creazilla.com/cliparts/20088/tiger-head-clipart-original.png" alt="Tiger logo">
+          <div><p>North Penn-Mansfield</p><h1>Class of 2026</h1></div>
+        </a>
+        <div class="topbar-right">
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="accounts.html">Accounts</a>
+            <a href="events.html">Events</a>
+            <a href="forum.html">Forum</a>
+            <details class="nav-more">
+              <summary>More</summary>
+              <div class="nav-more-menu">
+                <a href="directory.html">Directory</a>
+                <a href="plans.html">After Grad</a>
+                <a href="fundraisers.html">Fundraisers</a>
+                <a href="officers.html">Class Officers</a>
+                <a href="admin.html" class="admin-link hidden">Admin</a>
+              </div>
+            </details>
+          </div>
+          <a class="topbar-profile hidden" id="topbar-profile-link" href="accounts.html">
+            <img class="profile-avatar small" id="topbar-profile-avatar" src="https://cdn.creazilla.com/cliparts/20088/tiger-head-clipart-original.png" alt="Profile picture">
+            <div class="topbar-profile-text">
+              <span class="topbar-profile-label">My Account</span>
+              <span class="topbar-profile-name" id="topbar-profile-name">Open account</span>
+            </div>
+          </a>
+        </div>
+      </nav>
+      <section class="hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Admin Panel</p>
+          <h2>Run the portal from one place.</h2>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="section admin-section" id="admin">
+        <div class="section-heading">
+          <p class="eyebrow">Admin Panel</p>
+          <h3>Operations Dashboard</h3>
+          <p>Moderate content, manage announcements and photos, review reports, and monitor portal activity.</p>
+        </div>
+        <div class="admin-lockup">
+          <article class="admin-card admin-login-card" id="admin-login-card">
+            <h4>Admin Login</h4>
+            <p class="admin-copy">Enter the admin password to unlock moderation, dashboard tools, and management forms.</p>
+            <form id="admin-login-form" class="admin-form">
+              <label>Password<input type="password" name="password" placeholder="Enter admin password" required></label>
+              <button type="submit" class="button button-primary admin-submit">Unlock admin panel</button>
+            </form>
+            <p id="login-status" class="admin-status" aria-live="polite"></p>
+          </article>
+          <div id="admin-content" class="admin-content admin-hidden" aria-hidden="true">
+            <div class="admin-header-row">
+              <p class="admin-copy">Admin mode is unlocked on this browser.</p>
+              <button type="button" class="button button-secondary toolbar-button" id="admin-logout">Lock admin panel</button>
+            </div>
+            <div class="admin-metrics-grid">
+              <article class="admin-card metric-card"><p class="status-label">Live Traffic</p><h4 id="live-visitors">0 active sessions</h4><p>Estimated browser sessions using this portal right now.</p></article>
+              <article class="admin-card metric-card"><p class="status-label">Accounts</p><h4 id="metric-accounts">0 registered</h4><p>Total student accounts created in this browser dataset.</p></article>
+              <article class="admin-card metric-card"><p class="status-label">Reports</p><h4 id="metric-reports">0 open reports</h4><p>Forum items flagged for review by students.</p></article>
+              <article class="admin-card metric-card"><p class="status-label">Content</p><h4 id="metric-content">0 items today</h4><p>Combined plans and threads posted in the portal.</p></article>
+            </div>
+            <div class="admin-grid">
+              <article class="admin-card">
+                <h4>Add Announcement</h4>
+                <form id="announcement-form" class="admin-form">
+                  <label>Category<input type="text" name="category" placeholder="Important, Event, Photos" required></label>
+                  <label>Title<input type="text" name="title" placeholder="Senior breakfast tickets on sale now" required></label>
+                  <label>Message<textarea name="message" rows="4" placeholder="Write the announcement details here." required></textarea></label>
+                  <label class="checkbox-row"><input type="checkbox" name="featured">Make this a featured announcement</label>
+                  <button type="submit" class="button button-primary admin-submit">Post announcement</button>
+                </form>
+              </article>
+              <article class="admin-card">
+                <h4>Album Moderation</h4>
+                <p class="required-note">Students can now add album photos from the homepage. Admins can remove photos directly from the album preview cards.</p>
+              </article>
+              <article class="admin-card">
+                <h4>Add Fundraiser</h4>
+                <form id="fundraiser-form" class="admin-form">
+                  <label>Fundraiser title<input type="text" name="title" placeholder="Senior Trip Fundraiser" required></label>
+                  <label>Description<textarea name="description" rows="4" placeholder="What is this fundraiser for?" required></textarea></label>
+                  <div class="mini-grid">
+                    <label>Goal amount<input type="number" min="1" step="0.01" name="goal_amount" placeholder="5000" required></label>
+                    <label>Current amount<input type="number" min="0" step="0.01" name="current_amount" placeholder="1250" required></label>
+                  </div>
+                  <label>End date<input type="date" name="ends_on"></label>
+                  <button type="submit" class="button button-primary admin-submit">Save fundraiser</button>
+                </form>
+              </article>
+              <article class="admin-card">
+                <h4>Add Event</h4>
+                <form id="event-form" class="admin-form">
+                  <label>Event title<input type="text" name="title" placeholder="Kickball Tournament" required></label>
+                  <label>Description<textarea name="description" rows="4" placeholder="Share the event details." required></textarea></label>
+                  <div class="mini-grid">
+                    <label>Start date and time<input type="datetime-local" name="starts_at" required></label>
+                    <label>Location<input type="text" name="location" placeholder="NPM Stadium" required></label>
+                  </div>
+                  <div class="mini-grid">
+                    <label>Capacity<input type="number" min="1" name="capacity" placeholder="100"></label>
+                    <label>Google Form link<input type="url" name="google_form_url" placeholder="Optional registration form link"></label>
+                  </div>
+                  <button type="submit" class="button button-primary admin-submit">Post event</button>
+                </form>
+              </article>
+              <article class="admin-card">
+                <h4>Moderation Queue</h4>
+                <div class="moderation-list" id="report-list"></div>
+              </article>
+              <article class="admin-card">
+                <h4>User Moderation</h4>
+                <p class="required-note">Account bans and kick-style temporary removals now redirect users to a banned page with a countdown and appeal form. True IP and hardware bans still need a real backend service outside this static site.</p>
+                <div class="moderation-list" id="user-admin-list"></div>
+              </article>
+              <article class="admin-card">
+                <h4>Portal Controls</h4>
+                <div class="control-stack">
+                  <button type="button" class="button button-secondary toolbar-button" id="seed-demo-data">Load demo content</button>
+                  <button type="button" class="button button-secondary toolbar-button" id="clear-reports">Clear reports</button>
+                  <button type="button" class="button button-secondary toolbar-button" id="reset-content">Reset all content</button>
+                </div>
+              </article>
+            </div>
+            <div class="admin-toolbar">
+              <p id="admin-status" class="admin-status" aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>North Penn-Mansfield Tigers | Class of 2026 Portal</p>
+      <p>Admin dashboard and moderation.</p>
+      <p>Created and developed by Class President Landyn Empet.</p>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="supabase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
