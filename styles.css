@@ -897,23 +897,31 @@ main { padding: 34px clamp(20px, 4vw, 56px) 64px; }
 .footer {
   display: grid;
   justify-items: center;
+  align-items: center;
   text-align: center;
-  gap: 16px;
+  gap: 18px;
+  width: 100%;
   border-top: 1px solid rgba(13, 31, 77, 0.1);
   margin-top: 28px;
-  padding: 30px 0 8px;
+  padding: 30px 0 10px;
 }
 
 .footer-main {
   display: grid;
   justify-items: center;
+  align-items: center;
+  text-align: center;
   gap: 10px;
+  width: 100%;
   max-width: 760px;
+  margin: 0 auto;
 }
 
 .footer-main p {
   margin: 0;
+  width: 100%;
   line-height: 1.7;
+  text-align: center;
 }
 
 .footer-meta {
@@ -921,8 +929,10 @@ main { padding: 34px clamp(20px, 4vw, 56px) 64px; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 10px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .footer-netlify {
